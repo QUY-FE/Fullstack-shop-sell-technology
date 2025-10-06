@@ -17,7 +17,8 @@ export default function NavbarMobile({list = []}: {list?: {id:number,name:string
                     onClick={() => setDropdown(false)}
                   />
                   {/* Dropdown menu */}
-                  <div className="w-screen bg-gray-50 shadow-md absolute top-[80px] left-0 rounded-md px-2 z-20">
+                  <div className="w-[300px] h-screen bg-gray-50 shadow-md absolute top-[80px] left-0 rounded-md px-2 z-20">
+                    <h1 className="text-2xl font-semibold text-center mt-3 mb-5 pb-3 border-b-[2.5px] border-colorBorder">Menu</h1>
                     <ul>
                       {list.map((item) => (
                         <li
@@ -26,7 +27,7 @@ export default function NavbarMobile({list = []}: {list?: {id:number,name:string
                         >
                           <Link
                             href={item.href}
-                            className="w-full h-full block text-lg px-8 py-2 text-right"
+                            className="w-full h-full block text-lg px-8 py-2 active:bg-black/10"
                           >
                             {item.name}
                           </Link>

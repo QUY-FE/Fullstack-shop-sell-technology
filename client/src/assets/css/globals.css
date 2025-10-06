@@ -32,7 +32,7 @@ html {
 
 
 .active {
-  @apply border-b-[2.5px] border-[#b3b3b3];
+  @apply border-b-[2.5px] border-[#b3b3b3] font-bold text-black/80;
 }
 
 .ct_input_sign_and_log-in-page {

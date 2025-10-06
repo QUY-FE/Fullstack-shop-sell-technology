@@ -9,44 +9,44 @@ import NavbarMobile from "./Header/NavbarMobile";
 const navbarListDefault = [
   {
     id: 1,
-    name: "Home",
+    name: "Trang chủ",
     href: "/",
   },
   {
     id: 2,
-    name: "About",
+    name: "Về chúng tôi",
     href: "/about",
   },
   {
     id: 3,
-    name: "Contact",
+    name: "Liên Hệ",
     href: "/contact",
   },
   {
     id: 4,
-    name: "Sign in",
+    name: "Đăng nhập",
     href: "/sign-in",
   },
 ];
 const navbarListWithCurrentUser = [
   {
     id: 1,
-    name: "Home",
+    name: "Trang chủ",
     href: "/",
   },
   {
     id: 4,
-    name: "Products",
+    name: "Tất cả sản phẩm",
     href: "/products",
   },
   {
     id: 2,
-    name: "About",
+    name: "Về chúng tôi",
     href: "/about",
   },
   {
     id: 3,
-    name: "Contact",
+    name: "Liên hệ",
     href: "/contact",
   },
 ];
@@ -57,10 +57,10 @@ export default function Header() {
     <header id="Home">
       <Sales
         hasSales
-        totalSales={47}
-        titleSales="Giảm giá cực sốc trong mùa hè này với đồ bơi "
+        totalSales={50}
+        titleSales="Giảm giá cực sốc trong mùa hè này với đồ gaming "
       />
-      <div className="border-b border-colorBorder">
+      <div className="border-b-2 border-colorBorder">
         <div className="max-w-[1200px] h-[80px] mx-auto  flex items-center ">
           {/* Navbar mobile */}
           <NavbarMobile list={currentUser ? navbarListWithCurrentUser :  navbarListDefault} />
@@ -69,7 +69,7 @@ export default function Header() {
             href="/"
             className="w-6/12 lg:w-2/12 h-full flex items-center lg:justify-start md:justify-center text-2xl lg:text-left lg:text-2xl font-semibold"
           >
-            Quynguyen
+            Quynguyen.shop
           </Link>
           {/* navbar */}
           <Navbar list={currentUser ? navbarListWithCurrentUser :  navbarListDefault} />

@@ -1,11 +1,11 @@
 "use client";
+import { useEffect, useState } from "react";
+import { useProducts } from "#/context/productContext";
 import Image from "next/image";
-import { FaStar } from "react-icons/fa";
 import Link from "next/link";
 import Carousel from "react-multi-carousel";
+import { FaStar } from "react-icons/fa";
 import Button, { CustomLeftArrow, CustomRightArrow } from "./Button/Button";
-import { useProducts } from "#/context/productContext";
-import { useEffect, useState } from "react";
 
 interface CountDownTimeProps {
   targetDate: string;
@@ -45,29 +45,29 @@ export default function FlashSales({ targetDate }: CountDownTimeProps) {
           <h1>
             Ngày :{" "}
             <span className="text-md text-primary font-bold italic">
-              {timeLeft?.days}
+              {timeLeft?.days || "00" }
             </span>
           </h1>
           <h1>
             Giờ:{" "}
             <span className="text-md text-primary font-bold italic">
-              {timeLeft?.hours}
+              {timeLeft?.hours || "00"}
             </span>
           </h1>
           <h1>
             Phút:{" "}
             <span className="text-md text-primary font-bold italic">
-              {timeLeft?.minutes}
+              {timeLeft?.minutes || "00"}
             </span>
           </h1>
           <h1>
             Giây:{" "}
             <span className="text-md text-primary font-bold italic">
-              {timeLeft?.seconds}
+              {timeLeft?.seconds || "00"}
             </span>
           </h1>
         </div>
-        <Link href="/products" className="">
+        <Link href="/products">
           <Button text="Xem thêm" primary w={156} h={46} />
         </Link>
       </div>
