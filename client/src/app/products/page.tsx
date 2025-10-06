@@ -34,16 +34,19 @@ export default function Page() {
             className="relative group block w-[205px] h-[300px] md:w-[260px] md:h-[320px] lg:w-[270px] lg:h-[370px] transition"
             key={product._id}
           >
-            <div className="absolute w-full  bottom-0   hidden rounded-lg group-hover:flex items-center justify-between py-3 px-2 z-50">                
-                <Link href={`/cart`}>
-                  <Button text="Thêm vào giỏ hàng" primary w={125} h={56} />              
-                </Link>
-                <Link href={`/product/${product?.slug}`}>
-                  <Button text="Xem Sản phẩm" primary w={125} h={56} />
-                </Link>
-              </div>
+            <Link
+              href={`/product/${product?.slug}`}
+              className="absolute inset-0 hidden rounded-lg group-hover:flex justify-between py-3 px-2 z-50 hover:bg-black/5"
+            >
+              <Link href={`/cart`}>
+                <Button text="Thêm vào giỏ hàng" primary w={125} h={56} />
+              </Link>
+              <Link href={`/product/${product?.slug}`}>
+                <Button text="Xem Sản phẩm" primary w={125} h={56} />
+              </Link>
+            </Link>
             <Image
-              src={(product?.image as string) || '/not_found.png'}
+              src={(product?.image as string) || "/not_found.png"}
               alt={product?.title || "Product image"}
               width={270}
               height={250}
