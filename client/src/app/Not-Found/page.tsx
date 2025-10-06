@@ -1,4 +1,4 @@
-import Button from "../../../../server/src/components/Button/Button";
+import Button from "#/components/Button/Button";
 import Link from "next/link";
 
 
