@@ -1,0 +1,30 @@
+{
+    "slug": "ban-phim-co-black-shark-v2",
+    "url": "https://www.google.com/aclk?sa=L&ai=DChsSEwiYq_z01I2QAxW6zBYFHfXqJb0YACICCAEQARoCdGw&co=1&ase=2&gclid=Cj0KCQjwrojHBhDdARIsAJdEJ_cqYlHPfTNppgmsLfSz6B-CRqFa6rTZSydeubauF3zZvlyIDQCgi3AaAmUNEALw_wcB&cid=CAASZeRoFSa7-77J7pqSJozydvfzKqA1qq-orkHrhns0Ltf9UUlYxrULjU9SRiSUBMucoOVxZjXBdXXjkc9EqLoOk32ZDntHhFxD68KaGlIdH6RIALwrnNha8zlss8RvDi5Px9BQKZTO&cce=2&category=acrcp_v1_32&sig=AOD64_2mFcy6OmMTO9lzHeyamA3L0qvbvA&ctype=5&q=&nis=4&ved=2ahUKEwjx7ff01I2QAxWgqVYBHagUFYEQ9aACKAB6BAgIEBE&adurl=",
+    "title": "Bàn phím cơ Black shark v4",
+    "newPrice": 200,
+    "oldPrice": 490,
+    "star": 5,
+    "countBuy": 12,
+    "salePercent": 60
+},
+{
+    "title": "Chuột gaming black shark X11",
+    "slug": "chuot-gaming-black-shark-x11",
+    "url": "https://namanhpc.vn/public/upload/images/hinhsanpham/chuot-attack-shark-x11-black-48541718078140.jpg",
+    "newPrice": 310,
+    "oldPrice": 490,
+    "countStar": 4,
+    "countBuy": 18,
+    "salePercent": 32
+},
+{
+    "title": "Tai nghe DAREU EH416",
+    "slug": "Tai-nghe-DAREU-EH416",
+    "url": "https://down-vn.img.susercontent.com/file/vn-11134258-820l4-mf12kldgfv9r29",
+    "newPrice": 310,
+    "oldPrice": 520,
+    "countStar": 4,
+    "countBuy": 36,
+    "salePercent": 36
+}
