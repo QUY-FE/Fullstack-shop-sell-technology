@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* thanh scroll css */
+::-webkit-scrollbar {
+  width: 4px; /* Chiều rộng thanh cuộn dọc */
+  height: 10px; /* Chiều cao thanh cuộn ngang */
+}
+
+/* Track (phần nền của thanh cuộn) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Thumb (cục trượt) */
+::-webkit-scrollbar-thumb {
+  background: #e34646;
+}
+
+/* Hover khi rê chuột */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4f4f;
+}
+
+
+
+.active {
+  @apply border-b-[2.5px] border-[#b3b3b3] font-bold text-black/80;
+}
+
+.cst_input {
+  @apply w-full text-black/85 font-semibold py-3 pl-2  outline-none  ;
+}
+
+.categories_card_default {
+  @apply w-[170px] h-[145px] border-2 border-[#b3b3b3] text-center text-black/80 rounded-lg   transition cursor-pointer;
+}
+.categories_card_active {
+  @apply w-[170px] h-[145px] border-2 text-center bg-[#e34646] text-white rounded-lg transition cursor-pointer;
+}
+
+.cst_btn {
+  @apply border-2 border-colorBorder rounded-md  my-4 shadow cursor-pointer hover:shadow-xl;
+}
+.cst_btn-primary {
+  @apply bg-primary text-white rounded-md my-4 shadow cursor-pointer hover:bg-[#fd5151] hover:shadow-xl transition;
+}
